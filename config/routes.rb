@@ -1,7 +1,9 @@
 TwitterApp::Application.routes.draw do
-  get "quacks/index"
-  get "quacks/show"
-  get "quacks/create"
+
+  root "quacks#index"
+  
+ resources :quacks
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

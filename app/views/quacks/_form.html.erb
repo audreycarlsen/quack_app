@@ -1,0 +1,10 @@
+<%= form_for(@quack) do |f| %>
+
+  <p><%= label_tag "What's your name?" %><br>
+     <%= f.text_field :author %></p>
+
+  <p><%= label_tag "What's on your mind?" %><br>
+     <%= f.text_area :body %></p>
+
+  <p><%= f.submit('ONWARD!', class: 'btn btn-success btn-sm')%></p>
+<% end %>
