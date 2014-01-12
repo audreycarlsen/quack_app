@@ -1,13 +1,21 @@
-<h1>Quacker</h1>
+<div class='container'>
 
-<%= render 'form' %>
+  <div class="row">
+    <div class="col-md-3">
+      <%= render 'form' %>
+    </div>
 
-<% Quack.all.reverse.each do |quack| %>
-  <p>
-    <strong><%= quack.author %></strong>
-    <br>
-    <%= quack.body %>
-    <br>
-    <%= link_to 'Details', quack_path(quack.id) %>
-  </p>
-<% end %>
+    <div class="col-md-3">
+      <% Quack.all.reverse.each do |quack| %>
+        <p>
+          <strong><%= quack.author %></strong>
+          <br>
+          <%= quack.body %>
+          <br>
+          <%= link_to 'Details', quack_path(quack.id) %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+
+</div>
