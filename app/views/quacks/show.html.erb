@@ -3,6 +3,7 @@
   <br>
   <%= @quack.body %>
 
-  <br><br>
+  <p><small><%= @quack.created_at.strftime("%b %e, %l:%M %p") %></small></p>
+
   <%= link_to 'Back', root_path %>
 </div>

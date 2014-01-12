@@ -13,6 +13,7 @@
           <%= quack.body %>
           <br>
           <%= link_to 'Details', quack_path(quack.id) %>
+          <br><small><%= time_ago_in_words(quack.created_at) %></small>
         </p>
       <% end %>
     </div>
